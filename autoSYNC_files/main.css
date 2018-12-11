@@ -1,0 +1,386 @@
+/*
+ * masthead
+ */
+html, body {
+	height: 100%;
+	min-height: 100;
+}
+body {
+	height: 100%;
+}
+body[data-mode='workspace'] {
+	overflow: hidden;
+}
+body[data-mode='workspace'] .react-container {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+    overflow: auto;
+}
+main {
+    width: 100%;
+}
+#reync .PaddedBox {
+    margin: 50px 0;
+}
+.CodeBox {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.ExBox {
+    width: 100%;
+    height: 100%;
+}
+.Shim {
+	position: fixed;
+	left: 40px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: 999999;
+	/*background-color: rgba(91, 189, 114, 0.4);*/
+	background-color: rgba(0,0,0,0.4);
+}
+#resync .UpdateBoxItem__header {
+    background-color: #292929;
+    color: white;
+    padding: 15px;
+    box-shadow: none;
+    border-bottom: 1px solid white;
+    pointer-events: none;
+}
+#resync .UpdateBoxItem--active {
+    pointer-events: none;
+    background-color: #292929;
+}
+#resync .UpdateBoxItem--active .header,
+#resync .UpdateBoxItem--active .meta,
+#resync .UpdateBoxItem--active .description {
+    color: white;
+}
+.UpdateBoxItem.ui.card {
+    margin: 1em 0;
+    margin: 0;
+    border-radius: 0;
+    background-color: #f7f7f7;
+    border-right: 0px solid transparent !important;
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px 0 #5bbd72,-1px 0 0 1px #5bbd72;
+}
+.TopMenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    background-color: #5bbd72;
+}
+.TopMenu__menu.ui.menu {
+    background-color: #5bbd72;
+}
+#resync .TopMenu__menuitem {
+    color: white;
+}
+.WorkSpace {
+	height: 100%;
+	width: 100%;
+}
+.WorkSpace--top50 {
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+.WorkSpaceCol {
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+.WorkSpaceCol--overflowable {
+    overflow: auto;
+}
+
+.WorkSpaceCol--Width100,
+.WorkSpaceCol--Width20 {
+	box-sizing: border-box;
+	padding: 0px;	
+    width: 250px;
+    min-width: 250px;
+}
+
+.WorkSpaceCol--underneath {
+    position: absolute;
+    z-index:0;
+    padding-left: 250px;
+    box-sizing: border-box;
+}
+.WorkSpaceCol--Width100 {
+    width: 100%;
+}
+
+.WorkSpaceCol--BorderRight {
+    background-color: white;
+    border-right: 15px solid #5bbd72;
+}
+.WorkSpaceCol--Width40 {
+	box-sizing: border-box;
+	padding-left: 40px;	
+    width: 100%;
+}
+.WorkSpaceCol--z10 {
+    z-index: 10;
+    position: relative;
+}
+.WorkSpaceCol--slider {
+    width: 60%;
+    position: absolute;
+    top: 0;
+    right: -55%;
+    transition: right 0.3s;
+    z-index: 10;
+    background-color: white;
+    border-left: 25px solid #5bbd72;
+}
+.WorkSpaceCol--icontop {
+	position: absolute;
+	top: 0;
+    	padding: 4px;
+        left: -45px;
+}
+.WorkSpaceCol__iconleft {
+
+}
+.WorkSpaceCol__iconright {
+	display: none !important;
+}
+.WorkSpaceCol--slidershow,
+.WorkSpaceCol--slider:hover {
+    right: 0%;
+}
+
+.WorkSpaceCol--slidershow .WorkSpaceCol__iconleft,
+.WorkSpaceCol--slider:hover .WorkSpaceCol__iconleft {
+	display: none !important;
+}
+.WorkSpaceCol--slidershow .WorkSpaceCol__iconright,
+.WorkSpaceCol--slider:hover .WorkSpaceCol__iconright {
+	display: block !important;
+}
+.WorkSpace--leftBorderGreen {
+}
+
+.WorkSpaceRow {
+
+}
+
+.WorkSpace--heightHalf {
+	height: 50%;
+}
+.WorkSpace--heightThreeQuarts {
+	height: 75%;
+}
+.WorkSpace--heightOneQuart {
+	height: 25%;
+}
+.WorkSpace--heightQuarter {
+	height: 25%;
+}
+.WorkSpace--heightFull {
+	height: 100%;
+}
+
+.MenuBox {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 40px;
+	height: 100%;
+	background-color:#5bbd72;
+}
+#sandboxed {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.code-button .code-label {
+	z-index: -1;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s;
+}
+.code-button:hover .code-label {
+	z-index:99;
+	opacity: 1;
+}
+.mocha-frame {
+	width: 100%;
+	height: 100%;
+	display: block;	
+	border: none;
+}
+.masthead {
+	height: 100%;
+	width: 100%;
+	height: 100%;
+	background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+	overflow: hidden;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+.content-wrapper {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: 100%;
+	background-color: rgb(255,255,255);
+	opacity: 0;
+}
+
+.slide {
+	width: 100%;
+	min-height: 100%;
+	display: table !important;
+	height: 100%;
+}
+.slide.white-bg {
+	background-color: white;
+}
+.slide.slide-footer {
+	height: auto;
+	min-height: 10px;
+	padding: 50px 20px;
+}
+.slide.white *{
+	color: white !important;
+}
+.slide__cell {
+	display: table-cell !important;
+	vertical-align: middle;
+}
+/*
+ * LAUNCHPAD
+ */
+.launchpad {
+	width: 1px;
+	height: 1px;
+	background: transparent;
+}
+.launchpad-50s {
+	-webkit-animation: parallax 50s linear infinite;
+}
+
+.launchpad-30s {
+	-webkit-animation: parallax 30s linear infinite;
+}
+
+.launchpad-10s {
+	-webkit-animation: parallax 10s linear infinite;
+}
+@-webkit-keyframes parallax {
+	from {
+		-webkit-transform: translateY(0px);
+	}
+	to {
+		-webkit-transform: translateY(-2000px);
+	}
+}
+
+/*
+ * header
+ */
+.tk-header {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	text-align: center;
+	color: white;
+}
+h1.tk-header__cell.header {
+	font-size: 3em;
+	color: rgba(255, 255, 255, 0.5);
+	line-height: 1.2;
+	margin: 0px 0px 0px;
+	padding-bottom: 0px;
+}
+.ui.feed>.event>.content .summary { 
+	font-weight: normal;
+}
+.tk-header-3_4.header.huge {
+	font-size: 3.4em;
+}
+.tk-description-2_4 {
+	font-size: 2.4em;
+}
+.meta.tk-meta-1_4 {
+	font-size: 1.4em;
+}
+/*
+ * menu
+ */
+.main-menu {
+	position: fixed;
+	top: 20px;
+	z-index: 1;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 50px;
+}
+
+iframe {
+	display: none;
+	height: 0px;
+	width: 0px;
+}
+
+#mocha-report > .suite {
+	display: none;
+}
+
+#mocha-report > .suite:last-child {
+	display: block;
+}
+
+#mocha-stats {
+	display: none;
+}
+
+.add-button {
+	position: fixed;
+	top: 15px;
+	right: 15px;
+}
+#mocha .test a.replay {
+	display: none;
+}
+
+.spinner {
+    background-image: url('https://i1.wp.com/cdnjs.cloudflare.com/ajax/libs/galleriffic/2.0.1/css/loader.gif?zoom=2');
+    background-repeat: no-repeat;
+    background-position: 50% center;
+    min-height: 100%;
+}
+
+#app .leftCol {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+    z-index: 9999;
+}
+
+#app .rightCol {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 250px;
+    overflow: auto;
+    box-sizing: border-box;
+    z-index: 999;
+}

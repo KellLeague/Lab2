@@ -1,0 +1,9 @@
+body {
+    text-align: center;
+  }
+  
+  .inp {
+    font-size: 48px;
+    padding: 20px;
+    border: 1px solid black;
+  }
